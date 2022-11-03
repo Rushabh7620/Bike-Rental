@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { auth } from '../Config/Config'
 import { Link } from 'react-router-dom'
+import bike from '../images/bike.jpg';
+import bike2 from '../images/bike2.jpg';
 
 export const Login = (props) => {
 
@@ -21,7 +23,11 @@ export const Login = (props) => {
     return (
         <div className='container'>
             <br />
+            <div className="loginn">
+            <div className="img-cont"><img src={bike} alt='bike' /></div>
             <h2>Login</h2>
+            <div className="img-cont"><img src={bike2} alt='bike' /></div>
+            </div>
             <br />
             <form autoComplete="off" className='form-group' onSubmit={login}>
                 <label htmlFor="email">Email</label>

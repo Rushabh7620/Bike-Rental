@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { ProductsContext } from '../Global/ProductsContext'
 import { CartContext } from '../Global/CartContext'
+import ethereum from "../images/ethereum.png";
 
 export const Products = () => {
 
@@ -12,7 +13,7 @@ export const Products = () => {
         <>
             {products.length !== 0 && <h1>Products</h1>}
             <div className='products-container'>
-                {products.length === 0 && <div>slow internet...no products to display</div>}
+                {products.length === 0 && <div>Loading Available Items Please Wait</div>}
                 {products.map(product => (
                     <div className='product-card' key={product.ProductID}>
                         <div className='product-img'>
@@ -20,9 +21,11 @@ export const Products = () => {
                         </div>
                         <div className='product-name'>
                             {product.ProductName}
-                        </div>
+                        </div>  
                         <div className='product-price'>
-                            Rs {product.ProductPrice}.00
+                        <div className="etherum">
+                <img src={ethereum} alt='Etherum' /> </div>0.00{product.ProductPrice}
+                       
                     </div>
                         <button className='addcart-btn' onClick={() => dispatch({ type: 'ADD_TO_CART', id: product.ProductID, product })}>ADD TO CART</button>
                     </div>

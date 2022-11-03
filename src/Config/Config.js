@@ -1,19 +1,16 @@
-import * as firebase from 'firebase'
+import firebase from 'firebase'
 
 import 'firebase/storage';
 import 'firebase/firestore';
 import 'firebase/auth'
-
 const firebaseConfig = {
-    apiKey: "AIzaSyDGmVBx5LAYJuIq_Ni1nZBenfcVUFX-SyY",
-    authDomain: "ecommerce-with-react-2ac06.firebaseapp.com",
-    databaseURL: "https://ecommerce-with-react-2ac06.firebaseio.com",
-    projectId: "ecommerce-with-react-2ac06",
-    storageBucket: "ecommerce-with-react-2ac06.appspot.com",
-    messagingSenderId: "690603499200",
-    appId: "1:690603499200:web:09860bc318b5b7fd74d725",
-    measurementId: "G-88N35MC51Q"
-};
+    apiKey: "AIzaSyBAjuWESK_xiUA04j83RJxv50-YVOflCj8",
+    authDomain: "bike-rental-42782.firebaseapp.com",
+    projectId: "bike-rental-42782",
+    storageBucket: "bike-rental-42782.appspot.com",
+    messagingSenderId: "1083674428551",
+    appId: "1:1083674428551:web:b846e02cb18afc00666422"
+  };
 
 firebase.initializeApp(firebaseConfig);
 

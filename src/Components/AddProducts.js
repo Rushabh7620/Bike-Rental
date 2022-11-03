@@ -48,6 +48,11 @@ export const AddProducts = () => {
     }
 
     return (
+        <div className="rushabh">
+            <h1>
+              <span className="nouse">  Have a Bike with no use ? </span> Let's earn money from it</h1>
+               <h2>Just Add the Name of the bike Image and price for renting</h2>
+            
         <div className='container'>
             <br />
             <h2>ADD PRODUCTS</h2>
@@ -68,6 +73,7 @@ export const AddProducts = () => {
                 <button type="submit" className='btn btn-success btn-md mybtn'>ADD</button>
             </form>
             {error && <span className='error-msg'>{error}</span>}
+        </div>
         </div>
     )
 }

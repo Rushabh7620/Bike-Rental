@@ -3,6 +3,8 @@ import { Navbar } from './Navbar';
 import { Products } from './Products'
 import { useHistory } from 'react-router-dom'
 import { auth } from '../Config/Config'
+import { AddProducts } from './AddProducts';
+import {Specification} from './Specification'
 
 export const Home = ({ user }) => {
 
@@ -20,7 +22,10 @@ export const Home = ({ user }) => {
     return (
         <div className='wrapper'>
             <Navbar user={user} />
+           
             <Products />
+            <Specification />
+            <AddProducts/>
         </div>
     )
 }

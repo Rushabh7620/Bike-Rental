@@ -21,6 +21,7 @@ export class App extends Component {
 
         // getting user info for navigation bar
         auth.onAuthStateChanged(user => {
+            console.log(user)
             if (user) {
                 db.collection('SignedUpUsersData').doc(user.uid).get().then(snapshot => {
                     this.setState({
